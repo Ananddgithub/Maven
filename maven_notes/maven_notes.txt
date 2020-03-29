@@ -76,3 +76,22 @@ Every maven project has a list of elements which are known as "maven coordinates
 super_pom.xml default location is lib/maven-model-builder-3.0.3.jar:org/apache/maven/model/pom-4.0.0.xml in the maven installation folder.
 
 settings.xml in conf of maven installation folder.
+
+========================================================================================
+
+A plugin 
+	-is an extension to Maven, something used to produce your artifact (maven-jar-plugin for an example, 
+	-is used to, you guess it, make a jar out of your compiled classes and resources).
+	-Preferred for most of the work
+	-Create JAR files, unit test code, compile code
+
+A dependency 
+	-is a library that is needed by the application you are building, 
+	-at compile and/or test and/or runtime time.
+	-Used while task implementation by adding to the classpath
+	-Reproducible builds are defined, created and maintained
+	
+	
+========================================================================================	
+	
+	
