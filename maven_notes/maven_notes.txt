@@ -1,0 +1,78 @@
+Day to Day activity of a s/w developer:
+--------------------------------------
+
+1. Compile the computer source code into binary code (using any programming lang)
+2. Packaging the binary code
+3. Running automated tests
+4. Deploying it to the production systems
+5. creating documentation and release notes.
+
+Collectively we call it a build.. 
+
+some of the build tools are make, Apache ant, Apache maven, gradle, sbt
+
+Maven - Meaning (one who understands)
+
+Maven is written in Java
+
+Founder - Jason van Zyl (first project - Apache Turbine)
+
+Convention over Configuration
+
+Maven can be used to build and manage projects written in C#, Ruby, Scala,etc
+
+========================================================================================
+
+An XML file describes 						#POM.xml (POM - Project Object Model)
+	-the software project being built, 
+	-its dependencies on other external modules and components, 
+	-the build order, 
+	-directories and 
+	-required plug-ins.
+
+========================================================================================
+
+Maven 
+	-dynamically downloads Java libraries and 
+	-Maven plug-ins from one or more repositories 
+	-such as the Maven 2 Central Repository, and 
+	-stores them in a local cache. 
+	-This local cache of downloaded artifacts 
+	-can also be updated with artifacts created by local projects. 
+	-Public repositories can also be updated.
+	
+========================================================================================	
+	
+Pom.xml										(POM - Project Object Model)
+	<dependencies>       
+		<dependency>
+			<groupId> {{group_id_here}} </groupId>
+			<artifactId> {{artifact_id_here}} </artifactId>
+			<version> {{version_here}} </version>
+		</dependency>
+	</dependencies>
+	
+========================================================================================	
+Every maven project has a list of elements which are known as "maven coordinates".
+
+1. GroupId: 
+	-It uniquely identifies your project across all the projects. 
+	-It specifies the organization or group you are a part of. 
+	-It must follow Java’s package name rules. 
+	-This means it must start with a reversed domain name you control. Eg: com.knoldus
+	
+2. ArtifactId: 
+	-It is the name of the project without version. 
+	-You can choose any name with lower-case letters and no strange symbols.
+	
+3. Version: 
+	-This is used to provide the version number, which is “1.0-SNAPSHOT” by default. 
+	-Here, Snapshot means that the version is under development.
+	
+	
+========================================================================================
+
+
+super_pom.xml default location is lib/maven-model-builder-3.0.3.jar:org/apache/maven/model/pom-4.0.0.xml in the maven installation folder.
+
+settings.xml in conf of maven installation folder.
