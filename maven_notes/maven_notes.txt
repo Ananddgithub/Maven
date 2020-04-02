@@ -9,7 +9,7 @@ Day to Day activity of a s/w developer:
 
 Collectively we call it a build.. 
 
-some of the build tools are make, Apache ant, Apache maven, gradle, sbt
+some of the build tools are make, Apache ant, Nant, Apache maven, ivy, sbt gradle
 
 Maven - Meaning (one who understands)
 
